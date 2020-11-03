@@ -4,25 +4,25 @@
 
 ## 1. Intro Dart
 
-final, const
-list, set, map
-basic data type
-UTF-16, UTF-32('\uXXXX', '\u{XXXXXX'})
-function
-operator
-flow control
-Exception, Error
+final, const,
+list, set, map,
+basic data type,
+UTF-16, UTF-32('\uXXXX', '\u{XXXXXX'}),
+function,
+operator,
+flow control,
+Exception, Error,
 QA
 
 ## 2. Dart OOP
 
-class, variable, get, set
-static, construct
-extends, abstract
-implements, Mixin(with)
+class, variable, get, set,
+static, construct,
+extends, abstract,
+implements, Mixin(with),
 enum
 
-Generic
-class A<T>
-class A<T extends String>
+Generic：
+class A\<T>,
+class A\<T extends String>,
 T function(T)
