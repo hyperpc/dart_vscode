@@ -1,0 +1,3 @@
+Dart code running in isolates, seems like thread, but not traditional thread.
+isolates is separated, every isolate have own memory, means single thread; but traditional thread sharing memory;
+Dart async using isolates.
