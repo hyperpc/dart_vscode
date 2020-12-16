@@ -1,0 +1,67 @@
+macOS:
+jdk 
+    -> set JAVA_HOME...
+xcode
+Flutter SDK
+    -> 
+    sudo vi ~/.bash_profile
+    export PATH="$PATH:~/Dev/flutter/bin"
+    save
+    source ~/.bash_profile
+    -> 
+    brew update
+    brew install -HEAD usbmuxd
+    brew link usbmuxd
+    brew install -HEAD libimobiledevice
+    brew install ideviceinstall ios-deploy cocoapods
+    pod setup
+
+IDE: Android Studio or Visual Studio Code
+
+Android Studio:
+    -> 
+    install Android SDK
+    ->
+    sudo vi ~/.bash_profile
+    ANDROID_HOME=/Users/yp/Library/Android/SDK
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/platform-tools
+    ->
+    install plugin: Flutter, Dart...
+
+Visual Studio Code:
+    ->
+    (make sure Android SDK installed ahead)
+    ->
+    install plugin: Flutter, Dart...
+
+Upgrade
+    ->
+    upgrade flutter sdk:
+    flutter upgrade
+    ->
+    get app's dependenced lib:
+    flutter packages get
+    ->
+    upgrade app's dependenced lib:
+    flutter packages upgrade
+
+First Flutter App Via VS Code:
+1. Open Visual Studio Code;
+2. install the extensions: Dart, Flutter, and then Material Icon Theme (For Material Icons in Flutter)
+3. View => Command Palette;
+4. Type “flutter”, and select Flutter: New Project.
+5. Enter a project name like myfirstapp, and press Enter.
+6. Create or select the parent directory for the new project folder.
+7. Wait for the project to be created with default counter template.
+8. The startup file of the app is main.dart under lib folder and you need to almost work in lib folder for app. 
+    You need to work in other folders sometimes when you need to configure settings and plugins but that is limited.
+9. Now run your project to a connected external device or an emulator or simulator.
+    Start a enumerator
+    Run the command flutter run or in VS Code open Debug=>Start Debug(F5)
+10 If you want to run apps on external device connect it with a laptop or desktop and for android developer mode need to be on. 
+    You will find that Visual Studio code automatically tries to detect the external device you can see in the following screenshot that visual studio code detected my device. 
+    Please see bottom status bar of visual studio code, displaying flutter sdk version and devices list.
+11. On successful launch you can see the counter app running on your device or emulator or simulator.
+
+Visual Studio and Android Studio both have full IDE support that makes  for a better development experience.
